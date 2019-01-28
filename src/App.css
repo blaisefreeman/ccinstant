@@ -1,32 +1,62 @@
-.App {
-  text-align: center;
+.ais-Hits,
+.ais-Hits-list,
+.ais-Hits-item,
+.ais-RefinementList-list,
+.ais-RefinementList-item {
+  display:block;
+  padding:0;
+  margin:0;
+  list-style-type:none;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.ais-InstantSearch__root {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ais-RefinementList-item {
+  line-height:1.25;
+  margin-bottom:8px;
 }
-
-.App-link {
-  color: #61dafb;
+.ais-RefinementList-labelText {
+  font-size:15px;
+  font-family:sans-serif;
+  padding-left:6px;
+  padding-top:1px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ais-SearchBox-form {
+  background-color:#fff;
+  border:1px solid #eee;
+  border-radius:20px;
+  height:40px;
+  padding:6px;
+}
+.ais-SearchBox-input::placeholder {
+  color: #aaa;
+}
+input.ais-SearchBox-form:focus,
+input.ais-SearchBox-input:focus {
+  outline:none;
+}
+.ais-SearchBox-input {
+  font-size: 20px;
+  font-weight: 300;
+  border: 0;
+  cursor: text;
+  padding: 0;
+  width: calc(100% - 32px);
+  line-height: 1;
+  padding-left:8px;
+}
+.ais-SearchBox-submit {
+  border:0;
+  background:none;
+}
+.ais-SearchBox-submitIcon {
+  width:14px !important;
+  height:14px !important;
+  opacity:.5;
+  position:relative;
+  top:-1px;
+  right:-1px;
+}
+.ais-SearchBox-reset {
+  display:none;
 }
