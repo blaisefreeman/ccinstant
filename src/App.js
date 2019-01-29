@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
 
   const leftDrawerWidth = 240;
-  const rightDrawerWidth = 200;
+  const rightDrawerWidth = 240;
   const maxWidthBody = 840;
 
   const theme = createMuiTheme({
@@ -23,7 +23,7 @@ function App() {
          xs: 0,
          sm: 600,
          md: 720,                                       // right drawer becomes visible
-         lg: 720 + leftDrawerWidth,                     // left drawer becomes visible
+         lg: 840 + leftDrawerWidth,                     // left drawer becomes visible
          xl: 840 + leftDrawerWidth + rightDrawerWidth,  // right drawer fixes to left side of content
        }
      },
